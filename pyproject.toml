@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "loggibud"
+name = "olrp-loggibud"
 version = "0.1.0"
-description = "Real-world benchmarks for urban delivery problems, including vehicle routing and facility location problems."
-authors = ["Gabriela Surita <gsurita@loggi.com>", "Fillipe Goulart <fillipe.mendes@loggi.com>", "Juan Camilo <juan.camilo@loggi.com>"]
+description = "Optimal location query for real-world urban deliveries scenarios"
+authors = ["Iago Machado <iagomachadocs@gmail.com>", "Gabriela Surita <gsurita@loggi.com>", "Fillipe Goulart <fillipe.mendes@loggi.com>", "Juan Camilo <juan.camilo@loggi.com>"]
 license = "MIT"
+packages = [{include = "loggibud"}]
 
 [tool.poetry.dependencies]
-python = ">=3.7"
+python = ">=3.8"
 numpy = ">=1.19.2,<1.20.0"
 requests = "^2.25.1"
 dacite = "^1.6.0"
@@ -19,6 +20,8 @@ folium = "^0.12.1"
 polyline = "^1.4.0"
 lkh = "^1.0.4"
 tsplib95 = "^0.7.1"
+scikit-learn-extra = "^0.2.0"
+distinctipy = "^1.2.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.3"
@@ -26,6 +29,8 @@ mock = "^4.0.3"
 ipdb = "^0.13.7"
 flake8 = "^3.9.0"
 black = "^21.4b0"
+jupyter = "^1.0.0"
+matplotlib = "^3.6.2"
 
 [tool.black]
 line-length = 79
